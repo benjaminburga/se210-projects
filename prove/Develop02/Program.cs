@@ -153,6 +153,7 @@ class Program
     {
         PromptGenerator promptGenerator = new PromptGenerator();
         Journal journal = new Journal(promptGenerator);
+        Console.WriteLine("Welcome to Journal Program \n");
 
         while (true)
         {
