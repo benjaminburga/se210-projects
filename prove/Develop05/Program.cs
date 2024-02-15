@@ -61,17 +61,14 @@ class EternalGoal : Goal
     public EternalGoal(string shortName, string description, int points)
         : base(shortName, description, points)
     {
-        // No hay estado específico para EternalGoal
     }
 
     public override void RecordEvent()
     {
-        // No hay eventos específicos para EternalGoal
     }
 
     public override bool IsComplete()
     {
-        // Las metas eternas nunca se completan
         return false;
     }
 
@@ -112,10 +109,7 @@ class ChecklistGoal : Goal
         _amountCompleted++;
         if (_amountCompleted >= _target)
         {
-            // Aplicar bonificación al completar la lista de verificación
-            // Se debe cambiar score a una variable global o pasarlo como parámetro
-            // en función de tu implementación
-            // score += _bonus;
+          
         }
     }
 
@@ -148,7 +142,6 @@ class GoalManager
 
     public void Start()
     {
-        // Implementa la lógica del programa aquí
         LoadGoals();
         MenuLoop();
     }
